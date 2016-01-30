@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <title>Lillian Liu | Time is on my side </title>
         <link type="text/css" rel="stylesheet" href="main.css"/>
-        <script language="javascript" src="js/sketch.js"></script>	
-        <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+        <script language="javascript" src="js/sketch.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
     </head>
     
     <body>     
@@ -14,19 +15,20 @@
                 <h2> Jan 22 2016</h2>
                 <nav> 
                     <ul> 
-                        <li>Work</li>
-                        <li>Food</li>
-                        <li>Transit</li>
-                        <li>Panic</li> 
+                        <li><a href="" id="work">Work</a></li>
+                        <li><a href="" id="food">Food</a></li>
+                        <li><a href="" id="transit">Transit</a></li>
+                        <li><a href="" id= "panic"> Panic</a></li> 
                         <li><a href="" id="showAll">Show all</a></li>
                         <li><a href="" id="hideAll"> Hide all </a></li>
                     </ul>
                 </nav>
         </header>
-    
-            <section id="entry"> 
+        
+        <div id="entries"> 
+            <section class="entry transit"> 
               
-                    <h2 class="timestamp"> <br> 1:00 PM</h2>
+                    <h2 class="timestamp"><br>1:00 PM</h2>
                     <img class="category" src="images/transit.png" alt="transit"/> 
                         <ul>
                             <li>Walking out of Temple Coffee for CM Team lunch</li>
@@ -35,8 +37,8 @@
                             <li>Conversation:none </li>
                         </ul>
               </section>
-              <section id="entry"> 
-              <h2 class="timestamp"> <br>1:15 PM </h2>
+              <section class="entry food"> 
+              <h2 class="timestamp"><br>1:15 PM</h2>
                      <img class="category" src="images/food.png" alt="transit"/> 
                         <ul> 
                             <li>Eating lunch with the Creative Media Programming Team + Nima </li>
@@ -45,8 +47,8 @@
                             <li>Conversation: Jeb Bush site hacking</li>
                         </ul>
                </section>    
-               <section id="entry"> 
-                    <h2 class="timestamp"> <br> 1:30 PM </h2> 
+               <section class="entry food"> 
+                    <h2 class="timestamp"><br>1:30 PM</h2>
                     <img class="category" src="images/food.png" alt="transit"/>
                     <ul> 
                         <li>Waiting for food to arrive</li>
@@ -55,8 +57,8 @@
                         <li> Conversation: Skydiving and Parachuting</li>
                    </ul>
                 </section>
-                <section id="entry"> 
-                    <h2 class="timestamp"> <br> 1:45 PM </h2> 
+                <section class="entry food"> 
+                    <h2 class="timestamp"> <br>1:45 PM </h2> 
                     <img class="category" src="images/food.png" alt="transit"/>
                     <ul>
                         <li>Finishing last dregs of Chicken Udon Soup.</li> 
@@ -65,8 +67,8 @@
                         <li>Conversation: Freeways near our hometowns in LA</li>
                     </ul>          
                 </section>  
-                <section id="entry"> 
-                    <h2 class="timestamp"><br>2:00 PM </h2> 
+                <section class="entry food"> 
+                    <h2 class="timestamp"><br>2:00 PM</h2>
                     <img class="category" src="images/food.png" alt="transit"/> 
                     <ul>
                         <li>Waiting for the group to finish. Please hurry up.</li>
@@ -75,8 +77,8 @@
                         <li>Conversation: "Lillian why do you keep scribbling in your notebook?"</li>
                     </ul>       
                 </section> 
-                <section id="entry"> 
-                    <h2 class="timestamp"><br> 2:15 PM </h2>
+                <section class="entry panic">
+                    <h2 class="timestamp"><br>2:15 PM</h2>
                     <img class="category" src="images/panic.png" alt="transit"/> 
                     <ul> 
                         <li>Trying to print out research for 157 final project. Printer is broken.</li>
@@ -85,8 +87,8 @@
                         <li>Conversation: None</li>
                     </ul>          
                 </section>
-                <section id="entry">
-                    <h2 class="timestamp"> <br>2:30 PM</h2> 
+                <section class="entry panic">
+                    <h2 class="timestamp"><br>2:30 PM</h2>
                     <img class="category" src="images/panic.png" alt="transit"/>
                     <ul>
                         <li>Trying to get the printer to work in Cruess 207. It is also broken.</li>
@@ -95,7 +97,7 @@
                     <li>Conversation: *internal screaming*</li>  
                     </ul>
                 </section>  
-                <section id="entry"> 
+                <section class="entry panic"> 
                     <h2 class="timestamp"> <br>2:45 PM</h2> 
                     <img class="category" src="images/panic.png" alt="transit"/>
                     <ul> 
@@ -105,8 +107,8 @@
                         <li>Conversation: None</li>
                     </ul>          
                 </section>  
-                 <section id="entry"> 
-                     <h2 class="timestamp"><br> 3:00 PM</h2>
+                 <section class="entry work"> 
+                     <h2 class="timestamp"><br>3:00 PM</h2>
                      <img class="category" src="images/work.png" alt="transit"/>
                      <ul>
                          <li>Sending off an email to Glenda</li>
@@ -116,8 +118,8 @@
                      </li>          
                     </ul> 
                 </section> 
-                <section id="entry"> 
-                    <h2 class="timestamp"> <br> 3:15 PM</h2>
+                <section class="entry work"> 
+                    <h2 class="timestamp"><br>3:15 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/>
                     <ul>
                         <li>Typing up these events in an Evernote document</li>
@@ -126,8 +128,8 @@
                         <li>Conversation: None</li>
                     </ul>          
                 </section>  
-                <section id="entry"> 
-                    <h2 class="timestamp"><br> 3:30 PM </h2> 
+                <section class="entry panic"> 
+                    <h2 class="timestamp"><br>3:30 PM</h2> 
                     <img class="category" src="images/panic.png" alt="transit"/> 
                     <ul>
                         <li>Realize that I've lost my keys</li>
@@ -136,9 +138,9 @@
                         <li>Conversation: Frantically calling Zen Toro, Temple Coffee, Jason Lin</li>
                     </ul>          
                 </section>  
-                <section id="entry"> 
+                <section class="entry transit"> 
                     <h2 class="timestamp"><br>3:45 PM</h2>
-                    <img class="category" src="images/panic.png" alt="transit"/>
+                    <img class="category" src="images/transit.png" alt="transit"/>
                     <ul> 
                         <li>On the search for keys: Sitting on a bus</li>
                         <li>Location: MU roundabout</li>
@@ -146,9 +148,9 @@
                         <li>Conversation: Will losing the keys will be an anomaly in this project? Unfortunately, no.</li>   
                     </ul>
                 </section> 
-                <section id="entry"> 
+                <section class="entry transit"> 
                     <h2 class="timestamp"><br>4:00 PM</h2> 
-                    <img class="category" src="images/panic.png" alt="transit"/>
+                    <img class="category" src="images/transit.png" alt="transit"/>
                     <ul>
                         <li>On the search for keys: About to get off the bus</li>
                         <li>Location: D street and First street intersection</li>
@@ -156,9 +158,9 @@
                         <li>Conversation: None</li>
                     </ul> 
                 </section> 
-                <section id="entry"> 
+                <section class="entry transit"> 
                     <h2 class="timestamp"><br>4:15 PM</h2> 
-                    <img class="category" src="images/panic.png" alt="transit"/> 
+                    <img class="category" src="images/transit.png" alt="transit"/> 
                     <ul>
                         <li>On the search for keys: Speedwalking back to Temple Coffee</li>
                         <li>Location: Next to Woodstock's Pizza</li>
@@ -166,7 +168,7 @@
                         <li> Conversation: None</li>
                     </ul>          
                 </section> 
-                <section id="entry"> 
+                <section class="entry work"> 
                     <h2 class="timestamp"><br>4:30 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/>
                     <ul>
@@ -176,7 +178,7 @@
                         <li> Conversation: Talking a little about user testing with their new app, HitUp.</li>
                     </ul>          
                 </section> 
-                <section id="entry"> 
+                <section class="entry work"> 
                     <h2 class="timestamp"><br>4:45 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/>
                     <ul>
@@ -186,7 +188,7 @@
                         <li>Conversation: None</li>
                     </ul>           
                 </section>
-                <section id="entry"> 
+                <section class="entry work"> 
                     <h2 class="timestamp"><br>5:00 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/> 
                     <ul>
@@ -196,7 +198,7 @@
                         <li>Conversation: None</li>
                     </ul>          
                 </section> 
-                <section id="entry"> 
+                <section class="entry work"> 
                     <h2 class="timestamp"><br>5:15 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/> 
                     <ul>
@@ -206,7 +208,7 @@
                         <li>Conversation: None</li>
                     </ul>          
                 </section> 
-                <section id="entry"> 
+                <section class="entry work"> 
                     <h2 class="timestamp"><br>5:30 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/> 
                     <ul>
@@ -216,7 +218,7 @@
                         <li>Conversation: None</li>
                     </ul>          
                 </section> 
-                <section id="entry"> 
+                <section class="entry work"> 
                     <h2 class="timestamp"><br>5:45 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/> 
                     <ul>
@@ -226,7 +228,7 @@
                         <li>Conversation: None</li>
                     </ul>          
                 </section> 
-                <section id="entry"> 
+                <section class="entry work"> 
                     <h2 class="timestamp"><br>6:00 PM</h2>
                     <img class="category" src="images/work.png" alt="transit"/> 
                     <ul>
@@ -239,8 +241,9 @@
 
     
     <section id="footer">
-        <a href="mailto:lilliu@ucdavis.edu"> Email </a> &nbsp;&nbsp;|&nbsp; <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a> &nbsp;|&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer"> Valid CSS </a>
+       <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a> &nbsp;|&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer"> Valid CSS </a>
         </section>
+    </div>        
 
     </body>
 </html>

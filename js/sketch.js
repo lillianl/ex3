@@ -1,11 +1,13 @@
 $(document).ready(function(){
   //console.log("ready");
     
-    $('#hideAll').click(function() {
+    var x = function() {
        $('section.entry').hide();
 
         return false;
-    });
+    };
+    
+    $('#hideAll').click(x);
 
 
     $('#showAll').click(function() {
